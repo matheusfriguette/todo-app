@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-2">
           <div className="flex -mx-2">
             <div className="w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-2">
-              <div className="bg-white p-8 border">
+              <div className="bg-white p-8 border-l border-b border-r">
                 <h1 className="font-semibold text-xl">To-dos</h1>
                 <TodoInput />
                 <TodosList />
