@@ -1,6 +1,6 @@
 import { CombinedState } from '@reduxjs/toolkit';
 
-import { Todo } from './reducers/todos/types';
+import { Todo } from './ducks/todos';
 
 export const loadState = (): CombinedState<{
   todos: Todo[];

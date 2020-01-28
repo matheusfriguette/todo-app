@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import { loadState, saveState } from './state';
-import rootReducer from './reducers/root-reducer';
+import rootReducer from './root-reducer';
 
 const persistedState = loadState();
 

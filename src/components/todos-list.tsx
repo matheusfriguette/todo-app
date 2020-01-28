@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { RootState } from '../store/reducers/root-reducer';
-import { Todo } from '../store/reducers/todos/types';
+import { RootState } from '../store/root-reducer';
+import { Todo } from '../store/ducks/todos';
 
 import TodoItem from './todo-item';
 

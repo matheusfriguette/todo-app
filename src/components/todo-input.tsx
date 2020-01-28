@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { addTodo } from '../store/reducers/todos/actions';
+import todos from '../store/ducks/todos';
 
 const TodoInput: React.FC = () => {
   const [todoText, setTodoText] = useState<string>('');
@@ -9,7 +9,7 @@ const TodoInput: React.FC = () => {
 
   const submitTodo = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    dispatch(addTodo(todoText));
+    dispatch(todos.actions.addTodo(todoText));
     setTodoText('');
   };
 
